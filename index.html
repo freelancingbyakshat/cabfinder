@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Your Details</title>
+  <link rel="stylesheet" href="style.css">
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Enter Your Details</h2>
+    <form id="detailsForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="passengers">Number of Passengers:</label>
+      <input type="number" id="passengers" name="passengers" min="1" required>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="statusMessage"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Cab</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="user">👤 <span id="userName">Customer</span></div>
+  </header>
+
+  <div class="content">
+
+    <!-- Pickup & Drop -->
+    <div class="card">
+      <input type="text" id="pickup" placeholder="📍 Pickup Location">
+      <input type="text" id="drop" placeholder="📍 Drop Location">
+    </div>
+
+    <!-- Cab Selection with Images -->
+    <div class="card">
+      <h3>Select Cab</h3>
+      <div class="cabs">
+        <div class="cab-option" onclick="selectCab('Mini', 10)">
+          <img src="img\minicab.jpg" alt="Mini Cab">
+          <p>Mini</p>
+        </div>
+        <div class="cab-option" onclick="selectCab('Sedan', 15)">
+          <img src="img\sedancab.jpg" alt="Sedan Cab">
+          <p>Sedan</p>
+        </div>
+        <div class="cab-option" onclick="selectCab('SUV', 20)">
+          <img src="img\suvcab.jpg" alt="SUV Cab">
+          <p>SUV</p>
+        </div>
+      </div>
+    </div>
+    <!-- Driver list will be injected here -->
+<div class="card" id="drivers-section">
+  <h3 id="drivers-heading" style="display: none;">Drivers</h3>
+  <div id="drivers"></div>
+</div>
+
+
+    <!-- User Notes -->
+    <div class="card note">
+      <p><strong>Note:</strong></p>
+      <ul>
+        <li>Please enter both <strong>Pickup</strong> and <strong>Drop</strong> locations and select a <strong>Cab
+            Type</strong> to view available drivers.</li>
+        <li>Click on a driver's name in the drivers section to open their profile</li>
+            <li>The cab images shown in the select cab section of cabs are <strong>for reference and understanding purposes
+            only</strong>.</li>
+        <li>Actual vehicle model, color, and appearance may vary based on driver availability.</li>
+      </ul>
+    </div>
+
+
+
+  </div>
+
+  <script src="home.js"></script>
+</body>
+
+</html>
