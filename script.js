@@ -1,5 +1,5 @@
 // Initialize EmailJS with your public key
-emailjs.init("8wIWH9kJaolfFGeRO"); // Replace with your actual Public Key
+emailjs.init("ZnMos94zHY7D9pJEw"); // Replace with your actual Public Key
 
 const form = document.getElementById("detailsForm");
 const status = document.getElementById("statusMessage");
@@ -18,7 +18,7 @@ form.addEventListener("submit", function(e) {
     localStorage.setItem("userName", formData.name);
 
     // Send email via EmailJS
-    emailjs.send("service_v525n17", "template_7mtdpyb", formData)
+    emailjs.send("service_8s7gnlw", "template_wag2zgd", formData)
         .then(() => {
             status.innerText = "Details submitted successfully!";
             status.style.color = "#4caf50";
