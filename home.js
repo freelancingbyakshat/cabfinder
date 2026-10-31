@@ -3,9 +3,9 @@ let ratePerKm = 0;
 const distance = 12; // Demo distance
 
 const driversData = [
-  { name: "Prithvi", cab: "Mini", exp: "5 Years", slogan: "Safe Ride", img: "img/unknowncabdrivering.jpeg", phone: "0123456789" },
-  { name: "Amit", cab: "Sedan", exp: "7 Years", slogan: "Smooth Drive", img: "img/unknowncabdrivering.jpeg", phone: "0123456789" },
-  { name: "Ramesh", cab: "SUV", exp: "10 Years", slogan: "Fast & Safe", img: "img/unknowncabdrivering.jpeg", phone: "0123456789" }
+  { name: "Prithvi", cab: "Mini", exp: "5 Years", slogan: "Safe Ride", img: "img/unknowncabdrivering.jpeg", phone: "" },
+  { name: "Amit", cab: "Sedan", exp: "7 Years", slogan: "Smooth Drive", img: "img/unknowncabdrivering.jpeg", phone: "" },
+  { name: "Ramesh", cab: "SUV", exp: "10 Years", slogan: "Fast & Safe", img: "img/unknowncabdrivering.jpeg", phone: "" }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
